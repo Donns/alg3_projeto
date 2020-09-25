@@ -1,0 +1,46 @@
+	Object forma[];
+        forma = new Object[3]; //3 clientes podem ser cadastrados
+        Cliente c = new Cliente();
+        
+        forma[0] = (Cliente) c;
+        forma[1] = (Cliente) c;
+        forma[2] = (Cliente) c;
+        
+        ((Cliente)forma[0]).setNome("Ana");
+        ((Cliente)forma[0]).setCpf("000.000.000-00");
+        ((Cliente)forma[0]).setTelefone("(00)00000000");
+        ((Cliente)forma[0]).setDataNascimento("00000000");
+        
+        ((Cliente)forma[1]).setNome("Victor");
+        ((Cliente)forma[1]).setCpf("111.111.111-11");
+        ((Cliente)forma[1]).setTelefone("(11)11111111");
+        ((Cliente)forma[1]).setDataNascimento("11111111");
+        
+        ((Cliente)forma[2]).setNome("Fulano");
+        ((Cliente)forma[2]).setCpf("222.222.222-22");
+        ((Cliente)forma[2]).setTelefone("(22)22222222");
+        ((Cliente)forma[2]).setDataNascimento("22222222");
+        
+        /* Num sistema de cadastro real, os valore viriam do usuário, sendo necessário um loop for
+        import java.util.Scanner;
+        String var1, var2, var3, var4;
+        Scanner in = new Scanner(System.in);
+        
+        for (int i = 0; i < forma.leght; i++){
+            var1 = in.nextLine();
+            in.nextLine();
+        
+            var2 = in.nextLine();
+            in.nextLine();
+        
+            var3 = in.nextLine();
+            in.nextLine();
+        
+            var4 = in.nextLine();
+            in.nextLine();
+        
+            ((Cliente)forma[i]).setNome(var1);           // STRING
+            ((Cliente)forma[i]).setCpf(var2);            // STRING
+            ((Cliente)forma[i]).setTelefone(var3);       // STRING
+            ((Cliente)forma[i]).setDataNascimento(var4); // STRING
+        }*/
